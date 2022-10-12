@@ -10,9 +10,7 @@ describe('Employee', () => {
             expect(err.errors).to.exist;
         });
 
-        after(() => {
-            mongoose.models = {};
-        });
+
     });
 
     it('should throw an error if missing arg', () => {
@@ -43,9 +41,7 @@ describe('Employee', () => {
             });
         }
 
-        after(() => {
-            mongoose.models = {};
-        });
+
     });
 
     it('should throw an error if args are not a string', () => {
@@ -62,9 +58,7 @@ describe('Employee', () => {
                 expect(err.errors).to.exist;
             });
         }
-        after(() => {
-            mongoose.models = {};
-        });
+
 
     });
 
@@ -78,9 +72,7 @@ describe('Employee', () => {
             expect(err).to.not.exist;
         });
 
-        after(() => {
-            mongoose.models = {};
-        });
+
 
     })
 });
